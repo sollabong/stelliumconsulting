@@ -1,0 +1,24 @@
+.star {
+    width: 60px;
+    height: 60px; 
+    border-radius: 50%;
+    background-image: url(./assets/star1.png); 
+    background-size: cover;
+    position: absolute;
+    animation: glow 5s infinite;
+  }
+  
+
+  @keyframes glow {
+    0% {
+      opacity: 0.6;
+    }
+    50% {
+      opacity: 0.01;
+    }
+    100% {
+      opacity: 0.6;
+    }
+  }
+  
+  
