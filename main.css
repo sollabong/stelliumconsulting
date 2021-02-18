@@ -231,8 +231,42 @@ a :active{
 
 @media(max-width: 792px) {
 
+    .logo{
+        height: 40px;
+        margin:auto;
+    }
+    
+    .logo-title{
+        color: #0F1360 ;
+        font-family: 'Roboto Slab', serif;
+        font-size: .7rem;
+    }
+
+    .social{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        color: #0F1360 ;
+        width: 50px;
+    }
+
+    .social .fab{
+        color: #0F1360 ;
+        font-size: 1rem;
+    }
+    
+    .social .fas{
+        color: #0F1360 ;
+        font-size: 1rem;
+    }
+
     .hero{
         background-position:center;
+    }
+
+    .hero-logo{
+        margin-top: 40px;
     }
 
     .title{
@@ -245,6 +279,26 @@ a :active{
 
     .navbutton{
         font-size: 1rem;
+    }
+
+    .aboutme{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .profilpic{
+        height: 200px;
+        width: 75%;
+    }
+
+    .aboutcontainer{
+        width: 90%;
+    }
+
+    .callmesubphone{
+        margin: 0px 0px 0px 10px;
+        font-size: .75rem;
     }
 
 }
