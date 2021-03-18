@@ -241,24 +241,25 @@ a :active{
 .services-container{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
+    
 
 }
 
 .theservice{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     width: 75%;
 }
 .bigimage{
-    width: 40%;
+    width: 48%;
 }
 
 .servdescription{
-    width: 40%;
+    width: 48%;
 }
 
 .bigimg{
@@ -279,7 +280,7 @@ a :active{
 .contact{
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 75%;
     padding: 10px;
     margin: auto;
     justify-content: space-evenly;
@@ -368,7 +369,7 @@ a :active{
 
 .theservice{
     flex-direction: column;
-    width: 80%;
+    width: 90%;
 }
 .bigimage{
     width: 100%;
@@ -386,6 +387,7 @@ a :active{
 
 .contact{
     flex-direction: column;
+    width: 90%;
 }
 .map{
     width: 90%;
