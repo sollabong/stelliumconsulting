@@ -1,5 +1,4 @@
 
-
 html, body {
     padding:0;
     margin:0;
@@ -22,48 +21,53 @@ a :active{
 }
 
 /* Navigation */
-.navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position:fixed;
-    left:0;
-    top:0;
-    right: 0;
-    height: 70px;
-    width:100%;
-    padding: 5px 20px 5px 20px;
-    background-color: #fdfdfdec;
-    overflow: auto;
-    z-index: 200;
-}
-
-.logos{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center; 
-}
-
-.logo{
+.nav {
     height: 60px;
-    margin:auto;
-}
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #ffffffe8;
+  }
 
-.logo-title{
-    color: #0F1360 ;
-    font-family: 'Roboto Slab', serif;
-}
-
-.social{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    color: #0F1360 ;
-    width: 300px;
-}
+  .nav-logo{
+      height: 40px;
+      margin: auto;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    color: #0F1360;
+    padding: 10px 10px 0px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 20px 10px 0px 10px;
+    height: 40px;
+    text-decoration: none;
+    color: #0F1360;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: #BCC5EE;
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
 
 .social .fab{
     color: #0F1360 ;
@@ -79,7 +83,7 @@ a :active{
 .hero{
     background-image: url(./assets/herobg2.jpg);
     background-size: cover;
-    box-shadow: inset 0 0 0 1000px #0f136059; 
+    /* box-shadow: inset 0 0 0 1000px #0f136059;  */
     height:100%;
     width: 100%;
     display: flex;
@@ -135,7 +139,6 @@ a :active{
     align-content: center;
     height: auto;
     padding: 50px;
-    /* width: 100%; */
 }
 
 .profilpic{
@@ -170,8 +173,8 @@ a :active{
 }
 
 .callbutton{
-    background: linear-gradient(90deg, rgba(15,19,96,1) 0%, rgba(179,132,202,1) 100%);;
-    width: 120px;
+    background: linear-gradient(90deg, rgba(15,19,96,1) 0%, #BCC5EE);
+    width: 180px;
     height: 20px;
     color: white;
     border-radius: 20px;
@@ -190,7 +193,7 @@ a :active{
     height: 20px;
     padding: 10px;
     width: 20px;
-    background:  rgba(179,132,202,1);
+    background:  #BCC5EE;
     margin: 0px 5px 0px 10px;
     text-align: center;
 }
@@ -207,8 +210,129 @@ a :active{
 /* Services */
 
 .services{
-    height: 300px;
-    background: linear-gradient(270deg, rgba(15,19,96,1) 0%, rgba(179,132,202,1) 100%);
+    height: 250px;
+    background: linear-gradient(270deg, rgba(15,19,96,1) 0%, #BCC5EE 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-top: 20px;
+}
+
+.serv-uni{
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.servic{
+    width: 100px;
+    margin: auto;
+}
+
+/* Szolgáltatások részletesen */
+
+.services-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.theservice{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+.bigimage{
+    width: 40%;
+}
+
+.servdescription{
+    width: 40%;
+}
+
+.bigimg{
+    width:100%;
+}
+
+
+/* Contact */
+.contact-container{
+    padding-top: 20px;
+    background: linear-gradient(270deg, rgba(15,19,96,1) 0%, #BCC5EE 100%);;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.gform{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.input-field{
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 50px;
+}
+
+.input-area{
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+::placeholder { 
+    color: white;
+    opacity: .7;
+  }
+
+  .privacy{
+      color: white;
+  }
+
+.button-send{
+    border: 0px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgba(15,19,96,1);
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.map{
+    width: 48%;
 }
 /* Footer */
 .footer{
@@ -229,37 +353,95 @@ a :active{
     text-decoration: none;
 }
 
-@media(max-width: 792px) {
+.logo{
+    width:100px;
+}
 
-    .logo{
-        height: 40px;
-        margin:auto;
-    }
-    
-    .logo-title{
-        color: #0F1360 ;
-        font-family: 'Roboto Slab', serif;
-        font-size: .7rem;
-    }
 
-    .social{
+@media(max-width: 650px) {
+    .services{
+        flex-direction: column;
+        height: auto;
+    }
+}
+@media(max-width: 800px) {
+
+.theservice{
+    flex-direction: column;
+    width: 80%;
+}
+.bigimage{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.imgm{
+    display: none
+}
+
+.servdescription{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact{
+    flex-direction: column;
+}
+.map{
+    width: 90%;
+    margin-bottom: 15px;
+}
+.gform{
+    width: 90%;
+}
+}
+@media(max-width: 1320px) {
+    .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+
+      }
+      .nav > .nav-btn > label {
+        display: inline-block;
+        width: 60px;
+        height: 45px;
+        padding-top: 15px;
+      }
+      .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+        background-color: #BCC5EE;
+      }
+      .nav > .nav-btn > label > span {
         display: flex;
-        flex-direction: row;
+        width: 25px;
+        height: 10px;
+        border-top: 3px solid #0F1360;
+        margin: auto;
         align-items: center;
-        justify-content: space-evenly;
-        color: #0F1360 ;
-        width: 50px;
-    }
-
-    .social .fab{
-        color: #0F1360 ;
-        font-size: 1rem;
-    }
-    
-    .social .fas{
-        color: #0F1360 ;
-        font-size: 1rem;
-    }
+      }
+      .nav > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #BCC5EE;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 60px;
+        left: 0px;
+      }
+      .nav > .nav-links > a {
+        display: block;
+        width: 100%;
+      }
+      .nav > #nav-check:not(:checked) ~ .nav-links {
+        height: 0px;
+      }
+      .nav > #nav-check:checked ~ .nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+      }
 
     .hero{
         background-position:center;
@@ -296,10 +478,26 @@ a :active{
         width: 90%;
     }
 
+    .about{
+        text-align: justify;
+    }
+
     .callmesubphone{
         margin: 0px 0px 0px 10px;
         font-size: .75rem;
+        display: none;
     }
+
+    .callmesubtitle{
+        display: none;
+    }
+
+    .callmesub {
+        justify-content: center;
+        align-items: center;
+    }
+
+    
 
 }
   
