@@ -129,6 +129,7 @@ a :active{
     color: #ffffff;
     margin-top: 0px;
     animation: fadeIn ease 4s;
+    line-height: 40px;
 }
 
 /* .subtitle{  
