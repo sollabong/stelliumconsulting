@@ -35,6 +35,10 @@
 </head>
 
 <body>
+    <!-- Scroll up button -->
+    <a id="top"></a>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-circle-up fa-2x"></i></button>
+
     <!-- Navbar -->
     <div class="nav">
         <input type="checkbox" id="nav-check">
@@ -57,16 +61,17 @@
             <a href="#team">Team coaching</a>
             <a href="#trening">Tréningek</a>
             <a href="#szervezet">Szervezetfejlesztés</a>
-            <a href="#ref">Referenciák</a>
             <a href="#contact">Kapcsolódjunk</a>
         </div>
     </div>
 
     <div class="hero">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
         <div class="herotitle">
             <img src="./assets/stellium logo2.png" alt="" class="hero-logo">
             <p class="title">STELLIUM consulting</p>
-            <p class="subtitle">Here comes the SLOGAN</p>
+            <!-- <p class="subtitle">Here comes the SLOGAN</p> -->
         </div>
     </div>
     <div class="aboutme" id="rolam">
@@ -74,21 +79,81 @@
             <img class="profpic" src="./assets/profil.png" alt="">
         </div>
         <div class="aboutcontainer">
-            <div class="heading">Szia, Fanni vagyok</div>
-            <div class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.</div>
-            <div class="callme">
-                <div class="callbutton">KAPCSOLÓDJUNK</div>
-                <div class="callmesub">
-                    <div class="callmesubicon">
-                        <i class="fas fa-phone"></i>
+            <div class="heading aboutmee">Üdvözöllek<br></div>
+            <div class="about">
+                <p class="aboutmee"><strong>Virág Fanni vagyok, tanácsadó, coach.</strong></p> <br>
+                A cég megalapításának motivációjául a sikerekkel, nehézségekkel,
+                meghatározó tapasztalatokkal kikövezett utam szolgált, amely elvezetett a tanácsadó pályára.<br>
+                Közgazdasági, diplomáciai és nyelvész végzettségem tette lehetővé, hogy sokrétű tapasztalatot szerezzek
+                üzleti és diplomáciai környezetben, hazai és nemzetközi területen egyaránt. Mindezen állomásokat a
+                tanácsadói pályám előkészítő mérföldköveiként tartok számon, hiszen ez alatt az idő alatt világossá vált
+                számomra, hogy érzékenységem és érzékelésem lehetővé teszi, hogy intuitív meglátásaimmal olyan tanulási
+                helyzetekre, aspektusokra világítsak rá, amely az EMBER személyes fejlődését
+                szolgálják. <br>
+                <button class="service-button hidden-button-a" onClick="showDescA()" id="hidden-button-a">
+                    <i class="fas fa-chevron-down"></i><b> Tovább olvaslak...</b>
+                </button>
+                <div class="hidden-a" id="hidden-a">
+                    <div><br>Az általam képviselt értékszemlélet és egyéni megközelítésmód segíti, hogy a térben
+                        megjelenő
+                        energiák,
+                        dinamikák,
+                        személyiség, gondolkodás és szemlélet összjátékából a pillanatban kibontakozzanak a valódi
+                        megoldások. A
+                        megoldások, amelyek kezdetektől fogva ott vannak bennünk, önMAGunkban. Hiszem, hogy minden ember
+                        érték
+                        és mindannyiunknak megvan a pontos helye és küldetése az Élet mátrixában, amely helyet betöltve
+                        válhatunk egységgé. <br><br>
+                        Célom, hogy tisztánlátást adjak és segítsem a valósághoz való kapcsolódást az
+                        érzékelés alapú léten keresztül azoknak, akik hisznek a folytonos megújulás szükségességében. Ez
+                        a
+                        kapcsolódás nem csak a felszín mögé enged belátást, de nyitottá, befogadóvá és érzékennyé tesz
+                        bennünket
+                        a világra, miközben visszakapcsol az áramlásba.
+                        <button class="service-button hidden-button-b" onClick="showDescA()" id="hidden-button-b">
+                            <i class="fas fa-chevron-up"></i>
+                        </button>
                     </div>
-                    <div class="calmetext">
-                        <p class="callmesubtitle">Hívj, segítek!</p>
-                        <p class="callmesubphone">+36 (70) 123 1234</p>
+
+                </div>
+                <div class="callme">
+                    <a href="#contact">
+                        <div class="callbutton">KAPCSOLÓDJUNK</div>
+                    </a>
+                    <div class="callmesub">
+                        <div class="callmesubicon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="calmetext">
+                            <p class="callmesubtitle">Hívj, segítek!</p>
+                            <p class="callmesubphone">+36 (70) 123 1234</p>
+                        </div>
                     </div>
                 </div>
+            </div>
+
+        </div>
+        <div class="idezet">
+            <div class="quotebox">
+                <!-- Left Quote Font-Awesome Icon -->
+                <i class="fa fa-quote-left fa-3x" aria-hidden="true"></i>
+
+                <!-- Quote -->
+                <div id="quote">
+                    Szabadság<br><br>
+                    Egy-egy élet-nap:<br>
+                    ajándék? vagy <br>
+                    büntetés?<br>
+                    Amivé teszed. <br>
+                </div>
+
+                <!-- Right Quote Font-Awesome Icon -->
+                <i class="fa fa-quote-right fa-3x right-quotation-mark" aria-hidden="true"></i>
+                <!-- Author Div -->
+                <div id="author">
+                    <h4><em>- Fodor Ákos</em></h4>
+                </div>
+
             </div>
         </div>
     </div>
@@ -127,69 +192,88 @@
             </div>
         </div>
     </div>
-    <div class="heading" style="text-align: center; margin-top: 20px;">SZOLGÁLTATÁSOK</div>
+    <div class="heading" style="text-align: center; margin-top: 20px;">SZOLGÁLTATÁSOK<br><br><br></div>
     <div class="services-container">
         <div class="theservice" id="konz">
-            <div class="bigimage">
+            <div class="bigimage" style="float: left;">
                 <img src="./assets/111.png" alt="" class="bigimg">
             </div>
-            <div class="servdescription">
+            <div class="servdescription" style="float: right;">
                 <div class="heading">Konzultáció - Business Coaching</div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum.
+                A coaching méltán egyre népszerűbb eszköze a hatékony eredmények, személyes- és szakmai fejlődési
+                potenciálok elérésének, amelynek fontos aspektusa, hogy az ügyfél maga dolgozza ki saját megoldását
+                a
+                coach értő figyelmének kísértében. <br><br>
+                Az egyéni coaching folyamatban egy igazán mély beszélgetés bontakozik
+                ki, ahol az ügyfelemmel partnerként haladunk a tanulás útján és szembesülnek annak minden
+                napsütötte-
+                illetve árny oldalával. A problémát, az elakadások feldolgozását az ügyfél teljes személyiségén,
+                gondolkodásmódján keresztül értelmezzük, rávilágítva azokra a helyzetekre, melyből valódi tanulságok
+                vonhatók le.<br>
+                E tekintetben az önvalóval, belső erőforrással, érzékenységgel való kapcsolódás
+                kulcsfontosságú, ahogyan az iránymutatás, támogatás, megértés, elfogadás és folyamatos visszajelzés
+                egyaránt.
+                <a href="#contact">
+                    <div class="callbutton2">DOLGOZZUNK EGYÜTT</div>
+                </a>
             </div>
         </div>
         <div class="theservice" id="team">
-            <div class="servdescription">
-                <div class="heading">Team Coaching</div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum.
-            </div>
-            <div class="bigimage">
+            <div class="bigimage" style="float: right;">
                 <img src="./assets/222.png" alt="" class="bigimg">
             </div>
+            <div class="servdescription" style="float: left;">
+                <div class="heading">Team Coaching</div>
+                A team coaching olyan fejlesztési módszer, amely a csapatok aktuális témájának, problémájának
+                feldolgozására szolgál. <br><br>
+                A módszer a csoportdinamika mentén felmerülő kérdésekre keresi a megoldásokat a
+                hatékony együttműködés, a konfliktusok kezelésének és a kritikus témák jegyében.
+                <a href="#contact">
+                    <div class="callbutton2">DOLGOZZUNK EGYÜTT</div>
+                </a>
+            </div>
+
         </div>
         <div class="theservice" id="trening">
-            <div class="bigimage">
-                <img src="./assets/333.png" alt="" class="bigimg imgm">
+            <div class="bigimage" style="float: left;">
+                <img src="./assets/333.png" alt="" class="bigimg">
             </div>
-            <div class="servdescription">
+            <div class="servdescription" style="float: right;">
                 <div class="heading">Tréningek</div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum.
+                HAMAROSAN...
             </div>
         </div>
         <div class="theservice" id="szervezet">
-            <div class="servdescription">
-                <div class="heading">Szervezetfejlesztés</div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum.
-            </div>
-            <div class="bigimage">
+            <div class="bigimage" style="float: right;">
                 <img src="./assets/444.png" alt="" class="bigimg">
             </div>
+            <div class="servdescription" style="float: left;">
+                <div class="heading">Szervezetfejlesztés</div>
+                Minden szervezet egy komplex, sajátos rendszer, amely maga alakítja a kultúráját, értelmezi saját
+                magát.
+                Komplexitása ugyanakkor kölcsönhatással van a hatékony (együtt)működésre. Főként mai hektikus
+                világunkban különös fontossággal bír, hogy a vállalatok képesek legyenek alkalmazkodni az állandóan
+                változó körülményekhez, igényekhez. <br><br>
+                Éppen ezért a szervezetfejlesztés tekintetében kiemelkedő hangsúlyt
+                kap a rendszerszemlélet és a folyamat-tanácsadás megközelítés, amely során folytonos visszacsatolás
+                mellett lehetőség nyílik rugalmasan reagálni a szervezetben felmerülő igényekre.
+                <a href="#contact">
+                    <div class="callbutton2">DOLGOZZUNK EGYÜTT</div>
+                </a>
+            </div>
+
         </div>
     </div>
 
     <div class="contact-container" id="contact">
         <div class="contact">
             <div class="map">
-                <div class="heading">KAPCSOLÓDJUNK<br></div>
+                <div class="heading">KAPCSOLÓDJUNK<br><br></div>
                 <div class="kapcsolodas">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                    ut
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                     culpa qui officia deserunt mollit anim id est laborum.
@@ -242,6 +326,7 @@
     </div>
 
     <script src="./stars.js"></script>
+    <script src="./index.js"></script>
 
 </body>
 
