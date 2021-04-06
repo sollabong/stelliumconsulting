@@ -21,7 +21,7 @@ var domBody = document.body;
     var div = document.createElement('div');
     div.className = i % 9 == 0 ? 'star' : i % 9 == 0 ;
     // random everywhere!
-    div.setAttribute('style', 'top:' + Math.round(Math.random() * (wH-70)) + 'px;left:' + Math.round(Math.random() * (wW-100)) 
+    div.setAttribute('style', 'top:' + Math.round(Math.random() * (wH+110)) + 'px;left:' + Math.round(Math.random() * (wW-100)) 
     	+ 'px;animation-duration:' + (Math.round(Math.random() * 3000) + 3000) + 'ms;animation-delay:' + Math.round(Math.random() * 3000) + 'ms;');
     domBody.appendChild(div);
   }

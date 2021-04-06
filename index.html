@@ -27,6 +27,7 @@
 
     <title>STELLIUM Consulting</title>
 
+    <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./stars.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -42,7 +43,26 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-circle-up fa-2x"></i></button>
 
     <!-- Navbar -->
+    <div class="top-top">
+        <p class="address">
+            <!--<i class="fas fa-map-marker-alt"></i> --> Virág Fanni Business Coach, Budapest, HU
+        </p>
+        <div class="social">
+            <div class="switcher">
+                <div class="hu">
+                    <a href=""><img src="./assets/hungary.svg" alt="hungarian"></a>
+                </div>
+                <div class="en">
+                    <a href=""><img src="./assets/united-kingdom.svg" alt="english"></a>
+                </div>
+
+            </div>
+            <a href="https://www.instagram.com/szivnyito/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a class="phone" href="tel:36202335121"><i class="fas fa-phone-square"></i></a>
+        </div>
+    </div>
     <div class="nav">
+
         <input type="checkbox" id="nav-check">
         <div class="nav-header">
             <div class="nav-title">
@@ -67,7 +87,7 @@
         </div>
     </div>
 
-    <div class="hero">
+    <div class="hero" title="Photo by Christian Nielsen on Unsplash">
         <div class="stars"></div>
         <div class="twinkling"></div>
         <div class="herotitle">
@@ -128,7 +148,9 @@
                         </div>
                         <div class="calmetext">
                             <p class="callmesubtitle">Hívj, segítek!</p>
-                            <p class="callmesubphone">+36 (70) 123 1234</p>
+                            <a class="phone2" href="tel:36202335121">
+                                <p class="callmesubphone">+36 (20) 233 5121</p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -198,7 +220,7 @@
     <div class="services-container">
         <div class="theservice" id="konz">
             <div class="bigimage" style="float: left;">
-                <img src="./assets/1111.png" alt="" class="bigimg">
+                <img src="./assets/111111.png" alt="" class="bigimg">
             </div>
             <div class="servdescription" style="float: right;">
                 <div class="servcont">
@@ -224,7 +246,7 @@
         </div>
         <div class="theservice" id="team">
             <div class="bigimage" style="float: right;">
-                <img src="./assets/2222.png" alt="" class="bigimg">
+                <img src="./assets/222222.png" alt="" class="bigimg">
             </div>
             <div class="servdescription" style="float: left;">
                 <div class="servcont">
@@ -240,22 +262,12 @@
             </div>
 
         </div>
-        <div class="theservice" id="trening">
+
+        <div class="theservice" id="szervezet">
             <div class="bigimage" style="float: left;">
-                <img src="./assets/3333.png" alt="" class="bigimg">
+                <img src="./assets/44444.png" alt="" class="bigimg">
             </div>
             <div class="servdescription" style="float: right;">
-                <div class="servcont">
-                    <div class="heading">Tréningek</div>
-                    HAMAROSAN...
-                </div>
-            </div>
-        </div>
-        <div class="theservice" id="szervezet">
-            <div class="bigimage" style="float: right;">
-                <img src="./assets/4444.png" alt="" class="bigimg">
-            </div>
-            <div class="servdescription" style="float: left;">
                 <div class="servcont">
                     <div class="heading">Szervezetfejlesztés</div>
                     Minden szervezet egy komplex, sajátos rendszer, amely maga alakítja a kultúráját, értelmezi saját
@@ -273,20 +285,57 @@
             </div>
 
         </div>
+        <div class="theservice" id="trening">
+            <div class="bigimage" style="float: right;">
+                <img src="./assets/33333.png" alt="" class="bigimg">
+            </div>
+            <div class="servdescription" style="float: left;">
+                <div class="servcont">
+                    <div class="heading">Tréningek</div>
+                    HAMAROSAN...
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="contact-container" id="contact">
         <div class="contact">
             <div class="map">
-                <div class="heading" style="text-align: center;">KAPCSOLÓDJUNK<br><br></div>
+                <div class="heading" style="text-align: left;">KAPCSOLÓDJUNK<br><br></div>
                 <div class="kapcsolodas">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                    ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+                    <div class="social2">
+
+                        <img class="profpic2" src="./assets/profil.png" alt="">
+
+                        <div class=""><strong>Virág Fanni</strong></div>
+                        <div class="">Business Coach</div>
+                        <div class="kapcs-icon">
+                            <div class="callmesubicon2">
+                                <a href="https://www.instagram.com/szivnyito/" target="_blank"><i
+                                        class="fab fa-instagram"></i> </a>
+                            </div>
+                            <a href="https://www.instagram.com/szivnyito/" target="_blank" class="phone">@szivnyito</a>
+                        </div>
+                        <div class="kapcs-icon">
+                            <div class="callmesubicon2">
+                                <i class="fas fa-phone "></i>
+
+                            </div>
+                            <div class=""><a class="phone" href="tel:36202335121">+36 (20) 233 5121</a></div>
+                        </div>
+                        <div class="kapcs-icon">
+                            <div class="callmesubicon2">
+                                <i class="far fa-envelope"></i> </a>
+                            </div>
+                            fanni.virag@stellium.hu
+                        </div>
+                        <div class="kapcs-icon">
+                            <div class="callmesubicon2">
+                                <i class="fas fa-map-marker-alt"></i> </a>
+                            </div>
+                            Budapest, HU
+                        </div>
+                    </div>
                 </div>
             </div>
             <form id="gform" method="POST" class="gform" action="mail.php">

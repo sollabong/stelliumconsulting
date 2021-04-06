@@ -36,7 +36,58 @@ a :active{
     background-color: transparent;
     cursor: pointer;
 }
+/* Top nav */
 
+.top-top{
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(202, 202, 202);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.address{
+    font-size: 11px;
+    float: left;
+    color: white;
+    padding: 5px 5px 5px 15px;
+    margin: 0px;
+    line-height: 15px;
+}
+
+.switcher {
+    display: flex;
+    flex-direction: row;
+}
+.hu{
+
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.en{
+
+    width: 20px;
+    height: 20px;
+    filter:grayscale(95%);
+    margin-right: 10px;
+}
+
+.social{
+    float: right;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 10px;
+    color: white;
+    font-size: 1rem;
+    justify-content: space-evenly;
+    width: 180px;
+}
 /* Navigation */
 .nav {
     height: 60px;
@@ -89,18 +140,18 @@ a :active{
   }
 
 .social .fab{
-    color: #0F1360 ;
-    font-size: 2rem;
+    color: #ffffff ;
+    font-size: 1.7rem;
 }
 
 .social .fas{
-    color: #0F1360 ;
-    font-size: 2rem;
+    color: #ffffff ;
+    font-size: 1.7rem;
 }
 
 /* Hero image with stars */
 .hero{
-    background-image: url(./assets/herobg4.jpg);
+    background-image: url(./assets/herobg6.jpg);
     background-size: cover;
     /* box-shadow: inset 0 0 0 1000px #0f136059;  */
     height:100%;
@@ -233,6 +284,14 @@ a :active{
     margin: 0px 0px 0px 10px;
 }
 
+.phone {
+    color: white;
+}
+
+.phone2 {
+    color: #0F1360;
+}
+
 /* Hidden description */
 
 .hidden-button-a{
@@ -268,7 +327,7 @@ a :active{
     flex-direction: column;
     justify-content: center;
     color: #0F1360;
-    padding: 30px;
+
 }
 .quotebox {
     background: #BCC5EE;
@@ -335,8 +394,8 @@ a :active{
 }
 
 .theservice{
-    margin: 5px 0px 5px 0px;
-    align-items: center; 
+    margin: 5px 0px 20px 0px;
+    /* align-items: center;  */
     width: 75%;
     color: #0F1360;
 }
@@ -350,9 +409,9 @@ a :active{
     border-radius: 20px;
 }
 
-.bigimage:hover {
+/* .bigimage:hover {
     box-shadow: inset 0 0 0 1000px rgba(15, 19, 96, 0.137);
-}
+} */
 
 .servdescription{
     width: 48%;
@@ -370,6 +429,11 @@ a :active{
 
 .bigimg{
     width:50%;
+    align-self: center;
+}
+
+.bigimg2{
+    width:100%;
     align-self: center;
 }
 
@@ -464,8 +528,58 @@ a :active{
 }
 
 .kapcsolodas {
-    display: none;
+    display: flex;
+    
 }
+
+.profpic2{
+    height: 100px;
+    width: 100px;
+}
+
+.kapcs-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.social2 {
+width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    color: white;
+    font-size: 1rem;
+}
+
+.social2 .fab {
+    color: #ffffff ;
+    font-size: 1rem;
+    margin:auto;
+}
+
+.social2 .fas {
+    margin:auto;
+    color: #ffffff ;
+    font-size: 1rem;
+}
+
+.social2 .far {
+    margin:auto;
+    color: #ffffff ;
+    font-size: 1rem;
+}
+
+.callmesubicon2 {
+    border-radius: 20px;
+    height: 20px;
+    padding: 10px;
+    width: 20px;
+    background:  #BCC5EE;
+    margin: 10px 15px 10px 0px;
+    text-align: center;
+}
+
 /* Footer */
 .footer{
     width: 100%;
@@ -535,7 +649,7 @@ a :active{
         display: inline-block;
         position: absolute;
         right: 0px;
-        top: 0px;
+        top: 40px;
 
       }
       .nav > .nav-btn > label {
@@ -563,7 +677,7 @@ a :active{
         height: 0px;
         transition: all 0.3s ease-in;
         overflow-y: hidden;
-        top: 60px;
+        top: 100px;
         left: 0px;
       }
       .nav > .nav-links > a {
@@ -574,7 +688,7 @@ a :active{
         height: 0px;
       }
       .nav > #nav-check:checked ~ .nav-links {
-        height: calc(100vh - 50px);
+        height: auto;
         overflow-y: auto;
       }
 
