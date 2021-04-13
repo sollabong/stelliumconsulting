@@ -173,7 +173,7 @@ a :active{
 .hero-logo{
     margin: auto;
     align-items: center;
-    height: 300px;
+    width: 30%;
 }
 
 .title{
@@ -617,10 +617,15 @@ width: 100%;
         height: auto;
     }
 }
+
 @media(max-width: 800px) {
     .idezet2 {
         display: flex;
         width: 100%;
+    }
+
+    .hero-logo{
+        width: 60%;
     }
 
 .theservice{
